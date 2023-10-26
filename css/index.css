@@ -1,0 +1,55 @@
+@import url("./reset.css");
+@import url("./header.css");
+@import url("./discover.css");
+@import url("./weeklys.css");
+@import url("./subscribe.css");
+@import url("./footer.css");
+
+@font-face {
+    font-family: 'Tharlon', sans-serif;
+    src: url("../fonts/Tharlon-Regular.ttf");
+}
+
+.container{
+    max-width: 1920px;
+    margin: 0 auto;
+    padding: 0 155px;
+}
+
+body {
+    font-weight: 400;
+    font-size: 16px;
+    background: #435476;
+    color: #fff;
+    font-family: 'Tharlon', sans-serif;
+
+}
+
+.wrapper {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: clip;
+}
+
+.section-white {
+    background-color: #fff;
+}
+
+.menu-open {
+    overflow: hidden;   
+}
+
+.menu-open .wrapper {
+    background: #00000066;
+    opacity: 60%;
+}
+
+@media (max-width: 820px) {
+    .container {
+        padding: 0 30px;
+    }
+}
+
+
+

@@ -1,0 +1,195 @@
+.weeklys {
+    padding-bottom: 121px;
+    margin-top: -2px;
+}
+
+.weeklys__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 8px;
+}
+
+.weeklys__item__subtitle {
+    font-size: 20px;
+    line-height: 32px;
+    letter-spacing: 1px;
+    color: #1A1A1A;
+}
+
+.weeklys__item__title {
+    font-size: 48px;
+    line-height: 60px;
+    letter-spacing: 1px;
+    color: #1A1A1A;
+}
+
+.weeklys__btn {
+    margin-top: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+    gap: 32px;
+    color: #1A1A1A;
+}
+
+.weeklys__btn__view {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 24px;
+    border: 1px solid #1A1A1A;
+    transition: 0.5s ease;
+}
+
+.weeklys__btn__view::after {
+    content: "";
+    width: 20px;
+    height: 1px;
+    background-color: #1A1A1A;
+}
+
+.weeklys__content {
+    margin-top: 24px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 32px;
+}
+
+.weeklys__content__block {
+    max-width: 376px;
+    max-height: 580px;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+.weeklys__content__block__item {
+    min-width: 300px;
+    position: relative;
+    display: flex;
+    align-items: end;
+}
+
+.weeklys__content__block__item__image img {
+    height: 472px;
+    width: 376px;
+}
+
+.weeklys__content__block__item__mark {
+    position: absolute;
+    bottom: 16px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 4px 8px;
+    width: 82px;
+    font-size: 12px;
+    line-height: 12px;
+    letter-spacing: 1px;
+    color: #fff;
+    background-color: #435476;
+}
+
+.weeklys__content__block__item__mark::before {
+    content: "";
+    width: 23px;
+    height: 1px;
+    background-color: #fff;
+}
+
+.weeklys__content__block__description__brand {
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: 1px;
+    color: #999999;
+}
+
+.weeklys__content__block__description__name {
+    font-size: clamp(16px, 5vw, 24px);
+    line-height: 36px;
+    letter-spacing: 4px;
+    color: #1A1A1A;
+}
+
+.weeklys__content__block__description__item {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 3px;
+}
+
+.weeklys__content__block__description__item__price {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.weeklys__content__block__description__item__price__new {
+    font-size: 18px;
+    line-height: 28px;
+    color: #435476;
+}
+
+.weeklys__content__block__description__item__price__new_red {
+    color: #E20000;
+}
+
+.weeklys__content__block__description__item__price__old {
+    display: flex;
+    align-items: center;
+    position: relative;
+    font-size: 16px;
+    line-height: 28px;
+    color: #999999;
+}
+.weeklys__content__block__description__item__price__old::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: #999999;
+}
+
+.weeklys__content__block__description__item__btn {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.weeklys__content__block__description__item__btn__item {
+    position: relative;
+    display: flex;
+    flex-direction: column-reverse;
+    font-size: 10px;
+    line-height: 16px;
+    letter-spacing: 1px;
+    color: #333333;
+    transition: 0.3s ease;
+}
+
+.weeklys__content__block__description__item__btn__item::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: #333333;
+}
+
+.weeklys__content__block__description__item__icon {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.weeklys__content__block:hover {
+    transform: translateY(-5px);
+} 
+
+.weeklys__btn__view:hover,
+.weeklys__content__block__description__item__btn__item:hover {
+    opacity: 50%;
+}
